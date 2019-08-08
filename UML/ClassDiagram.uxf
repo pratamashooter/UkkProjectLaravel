@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<diagram program="umlet" version="14.3.0">
+  <zoom_level>10</zoom_level>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>20</y>
+      <w>210</w>
+      <h>90</h>
+    </coordinates>
+    <panel_attributes>Login
+--
+-email : VARCHAR(255)
+-password : VARCHAR(255)
+--
+-masuk ke halaman utama()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>60</x>
+      <y>190</y>
+      <w>210</w>
+      <h>200</h>
+    </coordinates>
+    <panel_attributes>Struk
+--
+-nama : VARCHAR(40)
+-no_hp : VARCHAR(40)
+-tipe_kamar : VARCHAR(40)
+-harga : INT(40)
+-lama_inap : INT(10)
+-jumlah : INT(10)
+-total : INT(50)
+-bayar : INT(30)
+-kembalian : INT(30)
+--
+-bukti untuk pemesan()</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>190</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Pengelola
+--
+-id : BIGINT(20)
+-name : VARCHAR(255)
+-email : VARCHAR(255)
+-password : VARCHAR(255)
+--
+-melayani pemesan()
+-membuat laporan()
+-mencetak struk()
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>380</x>
+      <y>450</y>
+      <w>210</w>
+      <h>150</h>
+    </coordinates>
+    <panel_attributes>Pemesan
+--
+-id : INT(30)
+-nama : VARCHAR(40)
+-no_hp : VARCHAR(40)
+--
+-memesan kamar()
+-membayar kamar()
+-menentukan kamar()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>460</y>
+      <w>210</w>
+      <h>130</h>
+    </coordinates>
+    <panel_attributes>Kamar
+--
+-id : BIGINT(20)
+-first_name : VARCHAR(255)
+-last_name : VARCHAR(255)
+-image : VARCHAR(255)
+-jumlah : INT(12)
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>UMLClass</id>
+    <coordinates>
+      <x>740</x>
+      <y>140</y>
+      <w>210</w>
+      <h>190</h>
+    </coordinates>
+    <panel_attributes>Laporan
+--
+-id : BIGINT(20)
+-nama : VARCHAR(40)
+-no_hp : VARCHAR(40)
+-tipe_kamar : VARCHAR(40)
+-harga : INT(40)
+-lama_inap : INT(10)
+-total : INT(50)
+-jumlah : INT(10)
+--
+-bukti dari adanya transaksi()
+
+</panel_attributes>
+    <additional_attributes/>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>470</x>
+      <y>100</y>
+      <w>40</w>
+      <h>110</h>
+    </coordinates>
+    <panel_attributes>m1=m
+m2=o</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;90.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>260</x>
+      <y>240</y>
+      <w>140</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>m1=o
+m2=m</panel_attributes>
+    <additional_attributes>120.0;10.0;10.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>480</x>
+      <y>330</y>
+      <w>40</w>
+      <h>140</h>
+    </coordinates>
+    <panel_attributes>m1=o
+m2=m</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>500</y>
+      <w>180</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>m1=m
+m2=m</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>140</x>
+      <y>380</y>
+      <w>260</w>
+      <h>170</h>
+    </coordinates>
+    <panel_attributes>m1=o
+m2=o</panel_attributes>
+    <additional_attributes>10.0;10.0;10.0;140.0;240.0;140.0</additional_attributes>
+  </element>
+  <element>
+    <id>Relation</id>
+    <coordinates>
+      <x>580</x>
+      <y>230</y>
+      <w>180</w>
+      <h>40</h>
+    </coordinates>
+    <panel_attributes>m1=o
+m2=o</panel_attributes>
+    <additional_attributes>10.0;10.0;160.0;10.0</additional_attributes>
+  </element>
+</diagram>
